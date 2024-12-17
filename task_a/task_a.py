@@ -22,4 +22,5 @@ def test_fib() -> None:
     assert fib(3) == 2
     assert fib(5) == 5
     assert fib(10) == 55
+    assert fib(15) == 610
     
