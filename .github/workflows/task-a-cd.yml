@@ -6,6 +6,8 @@ jobs:
   test:
     runs-on: "ubuntu-latest"
     name: pytest
+    cache:
+      pip: true
     steps:
         - uses: actions/checkout@v4
         - name: Set up Python
@@ -17,4 +19,4 @@ jobs:
             pip install -r ./task_a/requirements.txt
         - name: Run pytest
           run: |
-            pytest ./task_a/test_task_a.py
+            pytest ./task_a/task_a.py
